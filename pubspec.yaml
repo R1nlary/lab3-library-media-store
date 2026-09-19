@@ -1,0 +1,6 @@
+name: lab3_library_media_store
+description: LAB3 — Library Book Management System + Digital E-Commerce Media Store.
+version: 1.0.0
+
+environment:
+  sdk: ^3.0.0

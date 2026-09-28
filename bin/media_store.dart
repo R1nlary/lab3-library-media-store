@@ -1,8 +1,3 @@
-// Homework 3 — Digital E-Commerce Media Store
-//
-// An abstract class, two subclasses, a mixin and the collection methods
-// .where() and .fold().
-
 abstract class MediaItem {
   final String id;
   final String title;
@@ -32,8 +27,7 @@ class Audiobook extends MediaItem with Downloadable {
   }) : super(id: id, title: title, price: price);
 
   @override
-  String getDetails() =>
-      'Audiobook: "$title" narrated by $narrator, '
+  String getDetails() => 'Audiobook: "$title" narrated by $narrator, '
       '${durationHours}h, \$${price.toStringAsFixed(2)}';
 }
 
@@ -50,8 +44,7 @@ class EBook extends MediaItem with Downloadable {
   }) : super(id: id, title: title, price: price);
 
   @override
-  String getDetails() =>
-      'EBook: "$title" by $author, '
+  String getDetails() => 'EBook: "$title" by $author, '
       '${fileSizeMB}MB, \$${price.toStringAsFixed(2)}';
 }
 

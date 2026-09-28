@@ -1,7 +1,3 @@
-// LW3 — Library Book Management System
-//
-// Classes and the collection methods .where() and .fold().
-
 class Book {
   final String title;
   final String author;
